@@ -1,0 +1,46 @@
+/*Estilos da página sobremim.html*/
+.center{
+    text-align: center;
+}
+.justify{
+    text-align: justify;
+}
+.container {
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+#menu li{
+    display: inline;
+    padding: 15px;
+    
+}
+#menu li a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+#menu li a:hover{
+    color:gray;
+}
+
+.p-30{
+    padding: 30px;
+}
+.br-50{
+    border-radius: 50%;
+}
+.tm-social{ 
+    padding: 5px;
+}
+.mb-50{
+    margin: bottom 50px;
+}
+
+
+/*Estilos da página contato.html*/
+
+.ml-60{
+    margin-left: 60px;
+}
