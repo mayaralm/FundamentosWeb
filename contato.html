@@ -13,34 +13,36 @@
         
         <li><a href="contato.html">Contato</a></li>
     </ul>
-    <h1 class="center">Entre em Contato Comigo</h1>
+    
 
         <div class="container  mb-50">
             <div>
+                <h2 >Entrem em Contato Comigo:</h2>
                 <form>
                     <label for="nome">Nome:</label> <br>
-                    <input type="text" id= "nome"> 
-                    <br>
+                    <input type="text" id= "nome" onkeyup="validaNome()" > 
+                    <div id='txtnome' ></div>
                     <br>
                     <label for="email">Email:</label> <br>
-                    <input type="text" id= "email"> 
-                    <br>
+                    <input type="text" id= "email" onkeyup="validaEmail()"> 
+                    <div id='txtemail'></div>
                     <br>
                     <label for="assunto">Assunto:</label> <br>
-                    <textarea name="assunto" id="assunto" cols="50" rows="4"></textarea>
+                    <textarea name="assunto" id="assunto" cols="50" rows="4" onkeyup="validaAssunto()"></textarea>
+                    <div id='txtassunto'></div>
                     <br>
                     <br>
-                    <button>Enviar</button>
+                    <button onclick='enviar()'>Enviar</button>
                 </form>
 
             </div>
-            <div class="ml-60">
+            <div class="ml-75">
                 <h2>Endereço:</h2>
 
                  <p>R. Maria Emília Boeckmann,1017 </p>
                  <p>Paulista - PE</p>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15806.246841904649!2d-34.8631617!3d-7.9407577!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfdd4be4097d04cad!2sParque%20Lusit%C3%A2nia%20Condom%C3%ADnio%20I!5e0!3m2!1spt-BR!2sbr!4v1637689337515!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.561710531457!2d-34.86535574985648!3d-7.940757694252168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab17485429a5c7%3A0xfdd4be4097d04cad!2sParque%20Lusit%C3%A2nia%20Condom%C3%ADnio%20I!5e0!3m2!1spt-BR!2sbr!4v1637929489388!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" onmousemove = "mapaZoom()" onmouseout = "mapaNormal" id = 'mapa'></iframe>
 
             </div>
 
@@ -62,6 +64,7 @@
                  Mayara Leite &copy;
              </p>
         </footer>
+        <script src="assets/js/script.js"></script>
 
     
 </body>
